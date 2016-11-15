@@ -1,0 +1,153 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="anpuden.css"/>
+        <meta charset="utf-8" />
+        <style>
+            .dropdown {position: relative;display: inline-block;}
+            .dropdown-content {display:none;position:absolute; background-color: #f9f9f9;}
+      </style>
+    </head>
+    <body>
+        <div class="nav">
+            <div class="header">
+                <ul>
+                    <li><a>首页</a></li>
+                    <li class="ul_li">二手房</li>
+                    <li><a>新房</a></li>
+                    <li><a>租房</a></li>
+                    <li><a>旅居地产</a></li>
+                    <li><a>海外</a></li>
+                    <li><a>小区</a></li>
+                    <li><a>经纪人</a></li>
+                    <li><a>卖房</a></li>
+                </ul>
+                <div class="header_right">
+                    <p class="left_p"><img src="1.gif"/><a>登录</a>/<a>注册</a></p>
+                    <p><img src="2.gif"/>热线电话1010-9666</p>
+                </div>
+            </div>
+            <div class="logo">
+                <div class="clear"></div>
+                <ul>
+                    <li><img src="3.gif"/></li>
+                    <li><a>在售</a></li>
+                    <li>小区</li>
+                    <li>地图找房</li>
+                </ul>
+                <span><img src="4.gif"/><a>下载链家APP</a></span>
+            </div>
+            <div class="clear"></div>
+            <div class="search  clear">
+                <input type="text" id="searchInput" value autocomplete="off" placeholder="输入地铁线或地铁站可以找地铁附近的房源"/>
+            </div>
+            <div class="clear"></div>
+        </div>
+         <div class="clear"></div>
+        <div class="content">
+            <div class="choose">
+                <ul>
+                    <li><span>位置</span></li>
+                    <li>
+                    <a class="dropdown" onmouseover='show(this)' onmouseout="hide(this)" >区域</a>
+                        <ul class="dropdown-content" id='aaa'>
+                            <li><a>江岸</a></li>
+                            <li><a>江汉</a></li>
+                            <li><a>硚口</a></li>
+                            <li><a>东西湖</a></li>
+                            <li><a>武昌</a></li>
+                            <li><a>青山</a></li>
+                            <li><a>洪山</a></li>
+                            <li><a>汉阳</a></li>
+                        </ul>
+                    </li>
+                    <script>
+
+                        function show() {
+                            aaa.style.display='block';
+                        }
+                        function hide() {
+                            aaa.style.display='none';
+                        }
+                    </script>
+                    <li>
+                       <a class="dropdown" >地铁线</a>
+                        <ul class="dropdown-content">
+                            <li><a>1号线</a></li>
+                            <li><a>2号线</a></li>
+                            <li><a>4号线</a></li>
+                            <li><a>3号线</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+             <div class="clear"></div>
+            <div class="biaoge">
+                <form action="save.php" method="post" >
+                    <span>售价</span>
+                    <input type="radio" value="1" name="gender" id="diyi"/>
+                    <label>80万以下</label>
+                    <input type="radio" value="2" name="gender" />
+                    <label>80-100万</label>
+                    <input type="radio" value="3" name="gender" />
+                    <label>80-100万</label>
+                    <input type="radio" value="4" name="gender" />
+                    <label>80-100万</label>
+                    <input type="radio" value="5" name="gender" />
+                    <label>80-100万</label>
+                    <input type="radio" value="6" name="gender" />
+                    <label>80-100万</label>
+                </form>
+                <form action="save.php" method="post" >
+                    <span>面积</span>
+                    <input type="radio" value="1" name="gender" id="diyi"/>
+                    <label>60平以下</label>
+                    <input type="radio" value="2" name="gender" />
+                    <label>60-90平</label>
+                    <input type="radio" value="3" name="gender" />
+                    <label>90-120平</label>
+                    <input type="radio" value="4" name="gender" />
+                    <label>120-140平</label>
+                    <input type="radio" value="5" name="gender" />
+                    <label>40-200平</label>
+                    <input type="radio" value="6" name="gender" />
+                    <label>200-300平万</label>
+                </form>
+                <form action="save.php" method="post" >
+                    <span>房型</span>
+                    <input type="radio" value="1" name="gender" id="diyi"/>
+                    <label>一室</label>
+                    <input type="radio" value="2" name="gender" />
+                    <label>二室</label>
+                    <input type="radio" value="3" name="gender" />
+                    <label>三室</label>
+                    <input type="radio" value="4" name="gender" />
+                    <label>四室</label>
+                    <input type="radio" value="5" name="gender" />
+                    <label>五室</label>
+                    <input type="radio" value="6" name="gender" />
+                    <label>五室以上用途</label>
+                </form>
+                <form action="save.php" method="post" >
+                    <span>楼层</span>
+                    <input type="radio" value="1" name="gender" id="diyi"/>
+                    <label>低楼层</label>
+                    <input type="radio" value="2" name="gender" />
+                    <label>中楼层</label>
+                    <input type="radio" value="3" name="gender" />
+                    <label>高楼层</label>
+                </form>
+                <form action="save.php" method="post" >
+                    <span>用途</span>
+                    <input type="radio" value="1" name="gender" id="diyi"/>
+                    <label>普通住宅</label>
+                    <input type="radio" value="2" name="gender" />
+                    <label>商住两用</label>
+                    <input type="radio" value="3" name="gender" />
+                    <label>别墅</label>
+                    <input type="radio" value="4" name="gender" />
+                    <label>四合院</label>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

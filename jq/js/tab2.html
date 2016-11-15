@@ -1,0 +1,108 @@
+<html>
+	<head>
+		<script src="jquery.js"></script>
+		<meta charset="utf-8" />
+		<style>
+			.clear:after { content:"."; clear:both; display:block; height:0px; visibility:hidden; }
+			.clear {zoom:1}
+           	ul {background: blue;}
+           	ul li {float: left; width: 70px; height:20px; line-height: 20px; list-style :none; border:1px solid #ccc; text-align:center; margin-right:10px;}
+           	.tac{background:red;}
+           	ul li div {width:400px; text-align:left;}
+			.tae{margin:200px auto;}
+			.test1{background: #bbffaa;}
+			.test2{background: red;}
+			.aaron1{width:100px;height:100px; text-align:center; background: #ccc; float:left; padding: 5px;margin: 5px;}
+			.aaron2{width:100px;height:100px;text-align:center; background: #bbffaa;float:left; padding: 5px;margin: 5px;}
+		</style>
+		<script>
+			$(function(){
+				$("#tab li").click(function(){
+					$(this).siblings().removeClass('tac').children('div').hide();
+					$(this).addClass('tac').children().show();
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<ul id="tab">
+			<li class="tac">我的关注
+				<div>
+					<p>课程 | Linux系统管理</p>
+					<p>课程 | PHP微信公众平台开发高级篇—自定义菜单</p>
+					<p>课程 | Java高并发秒杀API之web层</p>
+				</div>
+			</li>
+			<li>推荐
+				<div class="nume">
+					<p>玩儿转Swift 2.0（第二季）</p>
+					<p>iOS基础教程-网络操作</p>
+					<p>Android-百度地图之导航</p>
+				</div>
+			</li>
+			<li>导航
+				<div class="nume">
+					<p>玩儿转Swift 2.0（第二季）</p>
+					<p>iOS基础教程-网络操作</p>
+					<p>Android-百度地图之导航</p>
+				</div>
+			</li>
+			<li>视频
+				<div class="nume">
+					<p>玩儿转Swift 2.0（第二季）</p>
+					<p>iOS基础教程-网络操作</p>
+					<p>Android-百度地图之导航</p>
+				</div>
+			</li>
+			<li>购物
+				<div class="nume">
+					<p>玩儿转Swift 2.0（第二季）</p>
+					<p>iOS基础教程-网络操作</p>
+					<p>Android-百度地图之导航</p>
+				</div>
+			</li>
+		</ul>
+		<div class="clear">
+		</div>
+		<div class="tae">
+			<h1>通过insertBefore与insertAfter添加元素</h1>
+			<button id="bt1">点击通过jQuery的insertBefore添加元素</button>
+			<button id="bt2">点击通过jQuery的insertAfter添加元素</button>
+			<div class="aaron">
+				<p class="test1">测试insertBefore,不支持多参数</p>
+			</div>
+			<div class="aaron">
+				<p class="test2">测试insertAfter,不支持多参数</p>
+			</div>
+			<script type="text/javascript">
+				$("#bt1").on('click', function(){
+					$('<p style="color:red">这是测试insertBefore方法增加</p>', '<p style="color:red">多参数</p>').insertBefore($(".test1"))
+				})
+
+				$("#bt2").on("click",function(){
+					$('<p style="color:#ccc">这是测试测试insertAfter方法增加</p>','<p style="color:blue">多参数</p>').insertAfter($(".test2"))
+				})
+			</script>
+		</div>
+		<div class="tar">
+			<h2>通过clone克隆元素</h2>
+			<div class="left">
+				<div  class="aaron1">点击,clone浅拷贝</div>
+				<div  class="aaron2">点击,clone深拷贝,可以继续触发创建</div>
+			</div>
+
+			<script type="text/javascript">
+				$(".aaron1").on('click', function() {
+				$(".left").append( $(this).clone().css('color','red') )
+				})
+			</script>
+
+			<script type="text/javascript">
+				$(".aaron2").on('click', function() {
+				console.log(1)
+				$(".left").append( $(this).clone(true).css('color','blue') )
+				})
+			</script>
+		</div>
+	</body>
+</html>

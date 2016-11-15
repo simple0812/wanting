@@ -1,0 +1,26 @@
+<meta charset='utf-8' />
+<div>
+	<span>num1:</span><input type='text' id='txtNum1'  /> <br/>
+	<span>num2:</span><input type='text' id='txtNum2'  /><br/>
+	<span>result:</span><input type='text' id='txtRet'  /><br/>
+	<input type='button' id='btnCalc' value='计算' onclick='calc()'/><br/>
+	<script>
+		
+		function calc() {
+			var num1 = txtNum1.value;
+			var num2 = txtNum2.value;
+			var bar = foo('zl', 'ww');
+			//txtRet.value = parseInt(num1) + parseInt(num2);
+			txtRet.value = bar;
+
+		}
+
+		function foo(x, y) {
+			return x + 'love' + y;
+		}
+
+		function eat(xxx) {
+			
+		}
+	</script>
+</div>

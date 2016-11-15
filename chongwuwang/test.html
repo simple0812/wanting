@@ -1,0 +1,40 @@
+
+<meta charset='utf-8' />
+<script>
+	
+	function judge() {
+		var foo = txtFoo.value;
+		var bar = txtBar.value;
+		if(foo > bar) {
+			message.innerHTML = 'foo > bar'
+		} else {
+			message.innerHTML = 'foo <= bar'
+		}
+	}
+
+
+
+</script>
+foo: <input type='text' id='txtFoo' />
+bar:<input type='text' id='txtBar' />
+<div id='message'></div>
+<input type='button' id='btn' value='判断' onclick='judge()' />
+
+<script>
+	
+	var str = "asdfasdf";
+	var num = 1;
+	var arr = [1, 2, 4, 5];
+
+	for(var i = 0; i < 10; i++ ) {
+		message.innerHTML = message.innerHTML + i + ' ';
+	}
+
+	while(num < 10) {
+		num = num + 1;
+
+		message.innerHTML = message.innerHTML + num + ',';
+	}
+
+	
+</script>

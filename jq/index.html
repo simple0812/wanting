@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<script type='text/javascript' src='./js/jquery.js'></script>
+		<script type='text/javascript'>
+			$(function(){
+				$('.but').on('click',function(){
+					var val=$(this).html();
+					var num1= +$('#num1').val();
+					var num2= +$('#num2').val();
+
+					switch(val) {
+						case '+':
+							$('#num3').val(num1 + num2);
+							break;
+						case '-':
+							$('#num3').val(num1 - num2);
+							break;
+						case '*':
+							$('#num3').val(num1 * num2);
+							break;
+						case '/':
+							$('#num3').val(num1 / num2);
+							break;
+						default:break;
+					}
+					// if(val=='+'){
+					// 	$('#num3').val(num1 + num2);
+					// }else if( val=='-'){
+					// 	$('#num3').val(num1 - num2);
+					// }else if( val=='*'){
+					// 	$('#num3').val(num1 * num2);
+					// }else if( val=='/'){
+					// 	$('#num3').val(num1 / num2);
+					// }
+				})
+			})
+			
+		</script>
+	</head>
+	<body>
+		<input type='text' id='num1' />
+		<input type='text' id='num2'/><br/>
+		<input type='text' id='num3'/><br/>
+		<button class='but'>+</button>
+		<button class='but'>-</button>
+		<button class='but'>*</button>
+		<button class='but'>/</button>
+	</body>
+</html>

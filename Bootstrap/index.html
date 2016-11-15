@@ -1,0 +1,80 @@
+<div>hello world</div>
+<script type='text/javascript'>
+	//当行注释
+	/*
+		基本数据类型
+	*/
+	var num1 = 1; //整数
+	var num2 = 1.2; //浮点数
+	var bl = true;  //布尔值
+
+	var str = "hello world"; //string
+	var numArr = [1, 2, 3, 4, 5] //整数数组
+	var strArr = ["a", "zl", "xx"]; //字符串数组
+	//对象
+	var obj = {
+		width:400,
+		height:200,
+		children: numArr
+	}
+	//函数
+	var func = function () {
+		alert('hello world');
+	}
+
+	/*基本结构*/
+
+	if(bl) {
+		console.log(true + '...');
+	} else {
+		console.log(false + '...');
+	}
+
+	/*
+	switch(n)
+	{
+		case 1:
+		  执行代码块 1
+		  break;
+		case 2:
+		  执行代码块 2
+		  break;
+		default:
+		  n 与 case 1 和 case 2 不同时执行的代码
+	}
+	*/
+
+	function foo(tag) {
+		switch(tag) {
+			case 'zl' : console.log("zl love ww"); break;
+			case 'ww' : console.log("ww love zl"); break;
+			default : console.log('...'); break;
+		}
+	}
+
+	function bar(tag) {
+		if(tag == 'zl') {
+			console.log("zl love ww");
+		} else if (tag == 'ww') {
+			console.log("ww love zl");
+		} else {
+			console.log('...')
+		}
+	}
+
+	for(var i = 0; i < 3; i = i+1) {
+		console.log(i, strArr[i]);
+	}
+	var times = 0;
+
+	while(bl) {
+		times ++;
+		console.log(times, '....')
+		if(times >= 10)
+			break;
+	}
+
+
+
+
+</script>

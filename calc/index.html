@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="./css/index.css"/>
+		<script type='text/javascript' src='./js/jquery.js'></script>
+	    <meta charset="utf-8" />
+	    <script type='text/javascript'>
+               $(function(){
+               	  alert($('#interface').siblings('.button').children('.a2').html());
+               	  alert($('.m').parent('p').siblings('.button').children('.a3').html());
+               	  $("p").css("color","red");
+               	})
+		</script>
+	</head>
+	<body>
+		<div class="nav">
+			<input id='interface' onfocus="focusx(this)" onchange="changex(this)" onblur="blurx(this)" type="text" value="55" name="myName " />
+			<p>
+				<span onclick="clickx(this)">MC</span> 
+				<span type="button">MR</span> 
+				<span class="m">M+</span>
+				<span>M-</span>
+				<span>MS</span>
+				<span>M#</span>
+			</p>
+			<div class="button">
+				<span>&nbsp</span>
+				<span>C</span>
+				<span>—</span>
+				<span>/</span>
+				<span class="a1">7</span>
+				<span class="a2">8</span>
+				<span class="a3">9</span>
+				<span>*</span>
+				<span>4</span>
+				<span>5</span>
+				<span>6</span>
+				<span>—</span>
+				<span>1</span>
+				<span>2</span>
+				<span>3</span>
+				<span>+</span>
+				<span>&nbsp</span>
+				<span>0</span>
+				<span>.</span>
+				<span>=</span>
+			<div>
+			</div>
+	</body>
+
+	
+</html>

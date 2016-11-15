@@ -1,0 +1,44 @@
+* { padding:0px; margin:0px;}
+body { width:100%; font-family:"微软雅黑,Arial"; font-size:12px;}
+ul,li,ol,dl,dd,dt, p, span ,b ,i,s,u,h1,h2,h3,h4,h5,h6{ list-style:none;}
+img{ border:0px;}
+.clear:after { content:"."; clear:both; display:block; height:0px; visibility:hidden; }
+a:link {color:#576346;}
+
+
+.nav{width:681px;height:200px; margin:0 auto;background:url(icon/2.jpg) 0 0  no-repeat;}
+.nav img{padding-left:47px;}
+.nav span{color:#528263; font-size:13px; float:right; margin-right:15px; padding-top:94px;}
+.nav ul{color:#ffffff;font-size:10px; width:690px;height:75px;}
+.nav  ul h1{font-size:15px; margin-top:10px;}
+.nav ul li{float:left;padding-top:65px; margin-left:65px; text-align: center;}
+
+
+.content{width:681px;height:400px;margin:0 auto; background:url(icon/3.jpg) 0 0  no-repeat; }
+
+.content_left{width:357px;height:371px; margin:0 auto; margin-top:30px;margin-left:45px;font-size:13px; line-height:1.5em;color:#ffffff; float:left;}
+.content_left img{padding-left:0px; margin:29px 0;}
+
+.content_right{width:185px;height:341px; border:1px solid gray; float:left; margin-top:30px;  background:#0b4138;}
+.content_right p{width:128px; height:150px;  font-size:11px; line-height:1.5em;color:#ffffff; margin-top:21px; padding-left:16px;}
+.content_right ul{color:#576346; font-size:14px; padding-left:16px;}
+.content_right ul li{margin-top:9px;}
+
+
+
+.footer{width:681px; height:403px;background:#040404; margin:0 auto;}
+.footer p{font-size:16px; color:#ffffff;margin-left:322px;}
+.footer_left{width:621px; height:365px; background:url(icon/6.jpg) 0 0  no-repeat; }
+.footer_left ul{float:right; padding:20px 60px; font-size:12px;color:#ffffff;line-height:1.5em;}
+.footer_left ul li{border-bottom:1px solid #000000; border-left:1px solid #000000; width:125px; height:47px; }
+.footer_left ul li span{ font-size:10px; color:#528263;}
+.footer_left img{width:409; height:329px; margin:0px 16px; position:relative;top:-212px;}
+  
+
+.right{width:266px; height:995px;border:1px solid gray; margin:0 auto; background:#000000;  position:relative;top:-1004px; margin-right:342px;}
+.right_head  img{width:266px; height:170px;}
+.center  img{width:266px; margin:0 auto;}
+.right_top{width:185px; color:#ffffff;font-size:13px;margin:0 auto;line-height:1.5em; }
+
+.right_top h1{margin:30px; width:121px; font-size:18px;}
+
